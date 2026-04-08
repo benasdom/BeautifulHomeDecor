@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="shortcut icon" href="assets/logo3.png" type="image/x-icon">
+<script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+
+    <script src="lenis.js" defer></script>
     <script src="index.js" defer></script>
 </head>
 <body>
@@ -15,7 +18,6 @@
         <img id="logo" src="assets/logo3.png" alt="">
         <svg viewBox="0 0 100 100"  class="svgmenu">
             <g fill="black">
-    
                 <path class="path" stroke-width="10" d="M10 15 H80"/>
                 <path class="path" stroke-width="10" d="M10 35 H70"/>
                 <path class="path" stroke-width="10" d="M10 55 H50"/>
@@ -27,7 +29,7 @@
     <div class="menubar">
         <div class="menu">
             <a href="index.html"><div class="options">Home</div></a>
-            <a href="objective.html"><div class="options">Our Collections</div></a>
+            <a href="collections.html"><div class="options">Our Collections</div></a>
             <a href="newsmedia.html"><div class="options">Design Inspiration</div></a>
             <a href="contact.html"><div class="options">Contact</div></a>
         </div>
@@ -35,69 +37,113 @@
     </div>
     <div class="welcome">
         <div class="titles">Contact Us</div>
-
     </div>
-<div class="mission">
-    <div class="cardbox">
-                <p class="say2 icon">📞</p>
-
-        <p class="say2"> " Don't hesitate to transform your space. Get in touch"</p>
-        <p class="say"> " A new era of beautiful home design.  "</p>
-
+    <div class="contacts-box">
+        <!-- --- -->
+<div class="cbox">
+    <div class="talktop">
+        <span class="dot"></span><span> Connect with us!</span>
     </div>
-    <div class="cardbox">
-                <p class="say2 icon">🎨</p>
-        <p class="say"> " Design your dream home "</p>
-        <p class="say2"> " Every beautiful home begins with a vision. Let us guide you "</p>
-    </div>
-    <div class="cardbox">
-
-
-        <p class="say2"> " Create it all "</p>
-        <p class="say"> " Aspire to create spaces that inspire. With the right vision and execution, your dream home is within reach "</p>
-
-    </div>
-    <div class="cardbox">
-        <p class="say"> " Learn from design masters! "</p>
-        <p class="say2"> " 
-            Learn from timeless design principles and create spaces that never go out of style "</p>
-            <p class="say"> " Your beautiful home awaits "</p>
-
-    </div>
-</div>
-<div class="gallery">
-    <div class="note">
-        Visualize It! Design It!
-    </div>
-</div>
-<div class="text-cards">
-    <div class="read">
-        <p class="readp">
-            <span>
-                BEAUTIFUL HOME DECOR is dedicated to transforming living spaces
-            </span><span>
-                 through elegant decor and thoughtful design by 
-            </span><span>
-                creating environments that inspire comfort, beauty, and personal expression.</span>
-        </p>
-        <div class="newsletter">
-            <h1>
-                Schedule a Design Consultation
-
-            </h1>
-            <div class="input">
-                <label class="label" for="inp" >YOUR EMAIL:</label>
-                <input id="inp" type="text" placeholder="eg. lorem@gmail.com"/>
-            <div class="send">Send</div>
-            </div>
+    <div class="talkmessage" >
+            <div class="dir">
+            <div class="right"><</div>
+            <div class="left">></div>
         </div>
-        
+    <div class="qrbox" >
+    
+        <div class="qritem" id="cleft">
+            <img src="./assets/tik.jpg"/>
+        </div>
+        <div class="qritem" id="cright">
+            <img src="./assets/ig.jpg"/>
+        </div>
     </div>
+<span>
+    <span class="controls">
+        <a href="#cleft" class="cleft"><</a>
+        <a href="#cright" class="cright">></a>
+    </span>
+<span>
+    Turn Your Space Into an Experience That Lasts
+</span>    
+</span>
 </div>
+<div class="socials">
+      <a href="mailto:bhdecor@gmail.com" target="_blank" class="socials-svg">
+            <svg width="25" height="27" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2885 3.44676C14.5506 3.38525 13.6404 3.38525 12.4824 3.38525H10.8665C9.70859 3.38525 8.7984 3.38525 8.06047 3.44676C7.30727 3.50956 6.67982 3.63951 6.09662 3.93011C5.13308 4.41023 4.31738 5.18223 3.74731 6.15355C3.59848 6.40714 3.47521 6.67453 3.37005 6.96294C3.01226 7.94413 2.84685 9.2392 2.60616 11.1237L2.5858 11.283C2.38081 12.8873 2.22056 14.1414 2.17189 15.1516C2.12247 16.1772 2.18225 17.0319 2.46611 17.8166C2.93006 19.0991 3.7867 20.1685 4.89158 20.8445C5.56757 21.258 6.3382 21.44 7.27963 21.5279C8.20684 21.6144 9.37169 21.6144 10.8618 21.6144H12.4872C13.9773 21.6144 15.1421 21.6144 16.0694 21.5279C17.0108 21.44 17.7814 21.258 18.4574 20.8445C19.5623 20.1685 20.4189 19.0991 20.8829 17.8166C21.1667 17.0319 21.2265 16.1772 21.1771 15.1516C21.1284 14.1414 20.9682 12.8872 20.7632 11.2829L20.7398 11.1C20.4848 9.1032 20.3141 7.76597 19.8981 6.75415C19.8115 6.54359 19.7137 6.34446 19.6017 6.15355C19.0316 5.18223 18.2159 4.41023 17.2524 3.93011C16.6692 3.63951 16.0417 3.50956 15.2885 3.44676ZM6.69566 5.35047C7.06329 5.16728 7.50279 5.06034 8.17039 5.00469C8.84696 4.94829 9.70216 4.94775 10.8962 4.94775H12.4527C13.6468 4.94775 14.502 4.94829 15.1786 5.00469C15.8462 5.06034 16.2857 5.16728 16.6533 5.35047C17.3454 5.69533 17.9343 6.24392 18.3537 6.93347L17.8264 7.50657C16.2148 9.2583 15.0562 10.5154 14.0568 11.3441C13.074 12.1592 12.3303 12.4861 11.5582 12.4861C10.7862 12.4861 10.0424 12.1592 9.0596 11.3441C8.06024 10.5154 6.90159 9.2583 5.29 7.50657L4.90579 7.08896C4.92318 7.05662 4.94098 7.02496 4.95922 6.99388C5.38057 6.27595 5.98348 5.70534 6.69566 5.35047ZM18.9092 8.53936C19.0476 9.23474 19.1676 10.1541 19.3346 11.4609C19.5453 13.1102 19.6965 14.298 19.7416 15.2333C19.7863 16.1609 19.7208 16.7592 19.5451 17.2449C19.2022 18.1928 18.569 18.9832 17.7523 19.4828C17.3339 19.7388 16.7978 19.8916 15.9463 19.9711C15.0878 20.0512 13.9846 20.0519 12.4527 20.0519H10.8962C9.36434 20.0519 8.26114 20.0512 7.40264 19.9711C6.55123 19.8916 6.01504 19.7388 5.59664 19.4828C4.77999 18.9832 4.14683 18.1928 3.80391 17.2449C3.62822 16.7592 3.56272 16.1609 3.60742 15.2333C3.65248 14.298 3.80363 13.1102 4.01437 11.4609C4.16486 10.2832 4.27696 9.41936 4.39983 8.74871C5.92248 10.4037 7.12285 11.7033 8.18763 12.5864C9.29828 13.5074 10.3455 14.0486 11.5582 14.0486C12.7709 14.0486 13.8181 13.5074 14.9288 12.5864C16.0139 11.6865 17.2397 10.354 18.804 8.6537L18.9092 8.53936Z" fill="#5B6871"></path>
+            </svg>
+          </a>
+                <a href="tel:0533991885" target="_blank" class="socials-svg">
+             <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+  <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" 
+        fill="currentColor"/>
+             </svg>
+          </a>
+    <a href="https://www.tiktok.com/@beautifulhomedecorgh?_r=1&_t=ZM-92xATqAAeAS" target="_blank" class="socials-svg">
+        <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 0V9.1C5.5 9.83454 4.90192 10.4 4.125 10.4C3.34808 10.4 2.75 9.83454 2.75 9.1C2.75 8.36546 3.34808 7.8 4.125 7.8V5.2C1.86317 5.2 0 6.96154 0 9.1C0 11.2385 1.86317 13 4.125 13C6.38683 13 8.25 11.2385 8.25 9.1V4.20215C9.0972 4.77274 9.98129 5.2 11 5.2V2.6C10.9349 2.6 9.98618 2.31522 9.32422 1.76973C8.66226 1.22423 8.25 0.539488 8.25 0H5.5Z" fill="#5B6871"></path>
+              </svg>
+            </a>
+    <a href="https://www.instagram.com/beautifulhomedecor63?igsh=MWpobW5kaGd1d2pnZQ%3D%3D&utm_source=qr" target="_blank" class="socials-svg">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.61111 0C1.62326 0 0 1.62326 0 3.61111V9.38889C0 11.3767 1.62326 13 3.61111 13H9.38889C11.3767 13 13 11.3767 13 9.38889V3.61111C13 1.62326 11.3767 0 9.38889 0H3.61111ZM3.61111 1.08333H9.38889C10.7911 1.08333 11.9167 2.20885 11.9167 3.61111V9.38889C11.9167 10.7911 10.7911 11.9167 9.38889 11.9167H3.61111C2.20885 11.9167 1.08333 10.7911 1.08333 9.38889V3.61111C1.08333 2.20885 2.20885 1.08333 3.61111 1.08333ZM10.2917 2.16667C10.148 2.16667 10.0102 2.22373 9.90865 2.32532C9.80707 2.4269 9.75 2.56467 9.75 2.70833C9.75 2.85199 9.80707 2.98977 9.90865 3.09135C10.0102 3.19293 10.148 3.25 10.2917 3.25C10.4353 3.25 10.5731 3.19293 10.6747 3.09135C10.7763 2.98977 10.8333 2.85199 10.8333 2.70833C10.8333 2.56467 10.7763 2.4269 10.6747 2.32532C10.5731 2.22373 10.4353 2.16667 10.2917 2.16667ZM6.5 2.88889C5.34144 2.88889 4.40392 3.34285 3.79308 4.03006C3.18223 4.71726 2.88889 5.61227 2.88889 6.5C2.88889 7.38773 3.18223 8.28274 3.79308 8.96994C4.40392 9.65715 5.34144 10.1111 6.5 10.1111C7.65856 10.1111 8.59608 9.65715 9.20692 8.96994C9.81777 8.28274 10.1111 7.38773 10.1111 6.5C10.1111 5.61227 9.81777 4.71726 9.20692 4.03006C8.59608 3.34285 7.65856 2.88889 6.5 2.88889ZM6.5 3.97222C7.38773 3.97222 7.98494 4.28562 8.39724 4.74946C8.80955 5.2133 9.02778 5.85301 9.02778 6.5C9.02778 7.14699 8.80955 7.7867 8.39724 8.25054C7.98494 8.71438 7.38773 9.02778 6.5 9.02778C5.61227 9.02778 5.01506 8.71438 4.60276 8.25054C4.19045 7.7867 3.97222 7.14699 3.97222 6.5C3.97222 5.85301 4.19045 5.2133 4.60276 4.74946C5.01506 4.28562 5.61227 3.97222 6.5 3.97222Z" fill="#5B6871"></path>
+              </svg>
+
+            </a>
+    <a href="https://www.facebook.com/share/1EFwj6xo8D/?mibextid=wwXIfr" target="_blank" class="socials-svg">
+        <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.38456 2.54348H6.7307C6.87931 2.54348 6.99993 2.41687 6.99993 2.26087V0.356935C6.99993 0.208848 6.89143 0.0856304 6.75089 0.0751739C6.32255 0.0432391 5.48579 0 4.88407 0C3.23074 0 2.15382 1.04 2.15382 2.93009V4.80435H0.269228C0.120614 4.80435 0 4.93096 0 5.08696V7.06522C0 7.22122 0.120614 7.34783 0.269228 7.34783H2.15382V12.7174C2.15382 12.8734 2.27444 13 2.42305 13H4.30765C4.45626 13 4.57688 12.8734 4.57688 12.7174V7.34783H6.52124C6.65855 7.34783 6.77378 7.23959 6.78885 7.0963L6.99831 5.11804C7.01608 4.95074 6.89116 4.80435 6.7307 4.80435H4.57688V3.3913C4.57688 2.92302 4.93845 2.54348 5.38456 2.54348Z" fill="#5B6871"></path>
+              </svg>
+            </a>
+</div>
+</div>
+<div class="cbox">
+    <div class="talk">
+        Let's talk
+</div>
+<div class="formbox">
+<div class="f1">
+
+<div class="input">
+    <input type="text" placeholder="Subject" name="" id="topic">
+</div>
+<div class="input">
+    <input type="text" placeholder="Message" name="" id="message">
+</div>
+</div>
+<div class="f1">
+<div class="input">
+    <input type="text" placeholder="Email" name="" id="email">
+</div>
+<div class="input">
+    <input type="text" placeholder="Phone" name="" id="phone">
+</div>
+</div>
+</div>
+<div class="stalk" onclick="launchEmail()"> 
+    <span></span>
+    
+    <div class="pdisa" href="#">
+            <svg width="14" height="14" viewBox="0 0 14 14">
+                                <path d="M10.8101 1.96222L0.726954 12.0453L1.66171 12.9801L11.7448 2.89698L11.9344 9.4447L13.208 9.07311L13.0134 2.35278C12.9877 1.46249 12.2434 0.718185 11.3531 0.692412L4.80762 0.502924L4.43487 1.77539L10.8101 1.96222Z" fill="white" stroke="white" stroke-width="0.542084"></path>
+                            </svg>
+                        </div></div>
+</div>
+    </div>
+    <div class="map">
+        <div class="maptitle">
+            <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40.6738 2.90426C34.7073 -3.09065 15.4974 3.91379 13.3281 4.73095C7.3689 6.97904 0.22047 10.4272 0.00574225 14.1062C-0.23835 19.1722 7.34504 24.2456 14.0585 26.2243C14.3815 26.3196 14.7302 26.2243 14.9688 25.9861L27.0303 13.945C27.7479 13.2286 28.9078 13.2286 29.6254 13.945C30.343 14.6614 30.343 15.8193 29.6254 16.5357L17.5327 28.608C17.2941 28.8462 17.1987 29.1943 17.2923 29.5168C19.3001 36.3984 24.5361 43.5 29.3868 43.5C29.4253 43.5 29.4657 43.5 29.5043 43.5C33.3969 43.1922 37.062 34.7971 38.8991 29.8227C39.6956 27.6754 46.4751 8.70129 40.6738 2.90426Z" fill="#FCFCFD"></path>
+              </svg>
+            Find Us On Google Maps</div>
+        <iframe class="ifmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d756.0395732003813!2d-0.200755030547875!3d5.687537634146635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9df8caad33fb%3A0xf93d165bd7c67b45!2sBEAUTIFUL%20HOME%20DECOR!5e1!3m2!1sen!2sgh!4v1768219557910!5m2!1sen!2sgh"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
 <div class="footer">
     <div class="lists">
         <div class="topic">SOCIALS</div>
-        <a class="link">Instagram</a>
+        <a href="https://www.instagram.com/beautifulhomedecor63?igsh=MWpobW5kaGd1d2pnZQ%3D%3D&utm_source=qr" class ="link">Instagram</a>
         <a href="https://www.bing.com/search?q=the.bigsisproject+tiktok&cvid=9ba2e0bb169a459e9cc6e536ecca5baf&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCDcwOTdqMGo0qAIIsAIB&FORM=ANAB01&DAF0=1&PC=U531" class="link"> Pinterest</a>
 
         <a href="https://www.linkedin.com/in/thekhadijahmohammed" class="link">Design Blog</a>
@@ -106,14 +152,26 @@
         <div class="topic">OUR LINKS</div>
         <a href="https://www.linkedin.com/in/thekhadijahmohammed" class="link"> Design Inspiration</a>
         <a href="contact.html" class="link"> contact</a>
-        <a href="objective.html" class="link"> collections</a>
+        <a href="collections.html" class="link"> collections</a>
                 <a href="apps/BeautifulHomeDecorInstaller.exe" class="link" download="BHDCalculator.exe">Tile Calculator app</a>
 
     </div>
     <div class="lists">
         <div class="topic">Contact</div>
-        <a href="" class="link"> 📍 Accra, Ghana</a>
-        <a href="tel:0548438724" class="link"> 📞 +233 54 843 8724 </a>
+        <a href="https://maps.app.goo.gl/WYFcuX3Bc75Wdg8fA" class="link">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2">
+  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+  <circle cx="12" cy="10" r="3"/>
+</svg>
+            Accra, Ghana</a>
+
+        <a href="tel:0548438724" class="link"> 
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+  <!-- Classic telephone receiver -->
+  <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" 
+        fill="currentColor"/>
+</svg>
+            +233 54 843 8724 </a>
         <a href="mailto:info@beautifulhome.org" class="link"> 📨 info@beautifulhome.org </a>
     </div>
 </div>
@@ -134,8 +192,8 @@
     
    
     <a href="index.html"><div class="options phoned">Home</div></a>
-    <a href="objective.html"><div class="options phoned">Our Collections</div></a>
-    <a href="newsmedia.html"><div class="options phoned">Design Inspiration</div></a>
+    <a href="collections.html"><div class="options phoned">Our Collections</div></a>
+    <a href="inspiration.html"><div class="options phoned">Design Inspiration</div></a>
     <a href="contact.html"><div class="options phoned">Contact</div></a>
 
 </div>

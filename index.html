@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+<script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
     <script src="index.js" defer></script>
 </head>
 <body>
@@ -14,7 +15,6 @@
         <img id="logo" src="assets/icon.png" alt="">
         <svg viewBox="0 0 100 100"  class="svgmenu">
             <g fill="black">
-    
                 <path class="path" stroke-width="10" d="M10 15 H80"/>
                 <path class="path" stroke-width="10" d="M10 35 H70"/>
                 <path class="path" stroke-width="10" d="M10 55 H50"/>
@@ -22,36 +22,30 @@
             </g>
         </svg>
     </div>
-  
     <div class="menubar">
         <div class="menu">
             <a href="index.html"><div class="options">Home</div></a>
-            <a href="objective.html"><div class="options">Our Collections</div></a>
-            <a href="newsmedia.html"><div class="options">Design Inspiration</div></a>
+            <a href="collections.html"><div class="options">Our Collections</div></a>
+            <a href="inspiration.html"><div class="options">Design Inspiration</div></a>
             <a href="contact.html"><div class="options">Contact</div></a>
         </div>
-        
     </div>
     <div class="welcome">
         <div class="imagehold">
-            <img class="pglogo" src="./assets/icon.png" alt="">
-
+            <img class="pglogo" src="./assets/icon-nobg.png" alt="">
         </div>
         <div class="h1blur">
         <h1>
            BEAUTIFUL HOME DECOR
-
         </h1>
         </div>
-
         <p> " Helping you make the right decision for your home "</p>
     </div>
 <div class="mission">
     <div class="cardbox">
         <p class="say2 icon">🌿</p>
-        <p class="say2"> " ✨ Transform your living spaces with nature-inspired designs ✨"</p>
+        <p class="say2"> " ✨ Transform your living spaces with luxury designs ✨"</p>
         <p class="say"> " Bringing natural elegance to every room. "</p>
-
     </div>
     <div class="cardbox">
         <p class="say2 icon">🛣️</p>
@@ -62,15 +56,12 @@
         <p class="say2 icon">👧🏾</p>
         <p class="say2"> "✨Create spaces that reflect you ✨ "</p>
         <p class="say"> " Your personality should shine through every corner of your home "</p>
-
     </div>
     <div class="cardbox">
         <p class="say2 icon">📖</p>
-
         <p class="say"> " Timeless design principles "</p>
         <p class="say2"> "✨ Learn from classic decor and create spaces that never go out of style ✨"</p>
-            <p class="say"> " Your dream home awaits "</p>
-
+        <p class="say"> " Your dream home awaits "</p>
     </div>
 </div>
 <div class="gallery">
@@ -80,13 +71,10 @@
 </div>
 <div class="showroombox">
     <div class="showroomtitle">Our Showroom</div>
-    
 <div class="showroom">
     <div class="tilecard" style="filter:grayscale(1)"> 
-
         <div class="tilepic">
             <div class="brandlogo"></div>
-
 
         </div>
         <div class="tileinfo">
@@ -95,7 +83,6 @@
                             <div class="name">Marble Collection</div>
                             <div class="price">350 cedis</div>
                             <div class="brandunit">1.13m<sup>2</sup></div>
-
             </div>
         </div>
     </div>
@@ -114,22 +101,31 @@
         </p>
         <div class="newsletter">
             <h1>
-                Make enquiries
+                Subscribe to our newsletter
 
             </h1>
             <div class="input">
-                <label class="label" for="inp" >YOUR EMAIL:</label>
-                <input id="inp" type="text" placeholder="eg. lorem@gmail.com"/>
-            <div class="send">SEND</div>
+                <input id="inp" type="text" placeholder="Email: eg. lorem@gmail.com"/>
+            <div style="align-self:center;justify-self:center" class="stalk"><span></span>
+                    <a class="pdisa" href="#">
+              <svg width="14" height="14" viewBox="0 0 14 14">
+                                <path d="M10.8101 1.96222L0.726954 12.0453L1.66171 12.9801L11.7448 2.89698L11.9344 9.4447L13.208 9.07311L13.0134 2.35278C12.9877 1.46249 12.2434 0.718185 11.3531 0.692412L4.80762 0.502924L4.43487 1.77539L10.8101 1.96222Z" fill="white" stroke="white" stroke-width="0.542084"></path>
+                            </svg>
+            </a>
+            </div>
             </div>
         </div>
         
     </div>
+    <!-- Name of the client
+    name of tile
+    300 m2 of 60 x60
+    n -->
 </div>
 <div class="footer">
     <div class="lists">
         <div class="topic">SOCIALS</div>
-        <a class="link">Instagram</a>
+        <a href="https://www.instagram.com/beautifulhomedecor63?igsh=MWpobW5kaGd1d2pnZQ%3D%3D&utm_source=qr" class ="link">Instagram</a>
         <a href="https://www.bing.com/search?q=the.BEAUTIFUL HOME+tiktok&cvid=9ba2e0bb169a459e9cc6e536ecca5baf&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCDcwOTdqMGo0qAIIsAIB&FORM=ANAB01&DAF0=1&PC=U531" class="link"> Pinterest</a>
 
         <a href="https://www.linkedin.com/in/bueautifulhome" class="link">Design Blog</a>
@@ -138,12 +134,13 @@
         <div class="topic">OUR LINKS</div>
         <a href="https://www.linkedin.com/in/beautiful home" class="link"> Design Inspiration</a>
         <a href="contact.html" class="link"> contact</a>
-        <a href="objective.html" class="link"> collections</a>
+        <a href="collections.html" class="link"> collections</a>
         <a href="apps/BeautifulHomeDecorInstaller.exe" class="link" download="BHDCalculator.exe">Tile Calculator app</a>
     </div>
     <div class="lists">
         <div class="topic">Contact</div>
-        <a href="" class="link"> 📍 Accra, Ghana</a>
+        <a href="https://maps.app.goo.gl/WYFcuX3Bc75Wdg8fA" class="link"> 📍 Accra, Ghana</a>
+
         <a href="tel:0548438724" class="link"> 📞 +233 54 843 8724 </a>
         <a href="mailto:info@beautifulhome.com" class="link"> 📨 info@beautifulhome.org </a>
     </div>
@@ -163,7 +160,7 @@
     <br>
     <br>
     <a href="index.html"><div class="options phoned">Home</div></a>
-    <a href="objective.html"><div class="options phoned">Our Collections</div></a>
+    <a href="collections.html"><div class="options phoned">Our Collections</div></a>
     <a href="newsmedia.html"><div class="options phoned">Design Inspiration</div></a>
     <a href="contact.html"><div class="options phoned">Contact</div></a>
 </div>
