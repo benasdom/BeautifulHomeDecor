@@ -37,13 +37,8 @@ body{
     font-family: "Michroma", serif;
     font-weight: 400;
     font-style: normal;
-    scroll-snap-type:y mandatory;
     scroll-behavior: smooth;
 }
-  html.lenis { height: auto; }
-  .lenis.lenis-smooth { scroll-behavior: auto; }
-  .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
-  .lenis.lenis-stopped { overflow: hidden; }
 .options:hover,.send:hover{
     box-shadow: inset 200px 0px 0px black;
     cursor: pointer;
